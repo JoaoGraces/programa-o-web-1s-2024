@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro</title>
+</head>
+<body>
+    <h1>Erro</h1>
+    <p id="erro"></p>
+    <p>Por favor insira um valor numérico válido</p>
+    <a href="/">Voltar</a>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const erro = urlParams.get('erro');
+        document.getElementById('erro').innerText = erro;
+    </script>
+</body>
+</html>
